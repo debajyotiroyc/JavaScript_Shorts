@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function f1()
+            {
+                var a=document.getElementById("op1");
+                var b=document.getElementById("op2");
+                var c=document.getElementById("op3");
+                var d=document.getElementById("op4");
+
+                if(a.checked==true)
+                alert("Selected="+a.value+" "+a.type);
+                else
+                alert("value= "+b.name);
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>RADIO-BUTTONS TESTING</h1>
+        <input id="op1" type="radio" name="grp1" value="Blue">Blue</input><br>
+        <input id="op2" type="radio" name="grp1" value="Red">Red</input><br>
+        <input id="op3" type="radio" name="grp1" value="Green">Green</input><br>
+        <input id="op4" type="radio" name="grp1" value="Yellow">Yellow</input><br>
+
+        <button onclick="f1()">Press Here</button>
+    </body>
+</html>
