@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function f1()
+            {
+                var x=document.getElementById("selectbox");
+                alert(x.options[x.selectedIndex].value);
+                var a=document.getElementById("ok");
+                alert(a.innerHTML);
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>TAKING INPUT VIA SELECTBOX FROM USER</h1>
+        <select id="selectbox">
+            <option value="Asia" id="ok" >ASIA</option>
+            <option value="Africa" >AFRICA</option>
+            <option value="Europe" >EUROPE</option>
+            <option value="Americas" >NORTH/SOUTH AMERICA</option>
+            <option value="Ocenia" >OCENIA</option>
+        </select>
+        
+        <button onclick="f1()">Press Here</button>
+    </body>
+</html>
