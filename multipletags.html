@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function stylechange()
+            {
+               var x =document.getElementsByTagName("p");
+               x[0].style.fontSize=30;
+               x[1].style.color="blue";
+               alert(x[3]);
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>Multiple tags effected.</h1>
+        <p>PARAGRAPH 1</p>
+        <p>PARAGRAPH 2</p>
+        <p>PARAGRAPH 3</p>
+        <p>PARAGRAPH 4</p>
+        <p>PARAGRAPH 5</p>
+
+        <button onclick="stylechange()">Press Here</button>
+    </body>
+</html>
