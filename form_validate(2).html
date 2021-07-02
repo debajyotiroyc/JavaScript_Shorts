@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title><h2>FORM VALIDATION USING JAVASCRIPT</h2></title>
+        <script type="text/javascript">
+            function f1(){
+                var name=document.getElementById("uname");
+                var pword=document.getElementById("pass");
+                if(name.value.trim()=="")
+                {
+                    alert("Blank Values not allowed!");
+                    name.style.border="solid 3px red";
+                    document.getElementById("lbl").style.visibility="visible";
+                    return false;
+                }
+                else if(pword.value.trim()=="")
+                {
+                    alert("Blank Values not allowed!");
+                    return false;
+
+                }
+                else if(pword.value.trim().length=="")
+                {
+                    alert("Length below 5 characters not allowed!");
+                    return false;
+
+                }
+                else
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return f1();"" action="Welcome.html">
+        <input id="uname" type="text" placeholder="ENTER USERNAME">
+        <label id="lbl" style="color: red; visibility: hidden;">Incorrect</label>
+        <br><br>
+        <input id="pass" type="password" placeholder="ENTER PASSWORD">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    </body>
+</html>
